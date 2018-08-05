@@ -1,3 +1,5 @@
+#Author: Tristen Smith
+#This function matches each name in the list to their respective phone # in list
 def phonebook(names, numbers):
     dict = {}
     for i in range(0,len(names)):
