@@ -1,3 +1,4 @@
+#Open marta sample.csv and follow the directions from there
 marta_file = open('marta sample.csv', 'r')
 def marta(file):
     read_file = marta_file.readlines()
