@@ -1,6 +1,3 @@
-#This csv file is to be used in conjunction with MartaDatabase.py
-#Put this file where your path folder is set to
-#Do not set this file within any other folders in path
 01/18/2016,12:01:08,RVG10405,30,9,3E8CADDB574A4E4A
 01/18/2016,08:01:06,RVG10402,30,9,3E8CADDF4A674E4A
 01/18/2016,16:01:03,RVG10402,30,9,3E8CADF935024E4A
@@ -11,3 +8,8 @@
 01/18/2016,16:01:10,RVG10505,31,10,3E8CADEAA6A54E4A
 01/18/2016,16:01:10,RVG10505,31,9,3E8CADEAA6A54E4A
 01/18/2016,17:01:00,RVG10504,31,10,3E8CADF990EE4E4A
+
+#This csv file is to be used in conjunction with MartaDatabase.py
+#Put this file where your path folder is set to
+#Do not set this file within any other folders in path
+#DELETE these comments when running MartaDatabase.py to avoid errors
