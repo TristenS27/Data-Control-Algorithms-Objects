@@ -11,5 +11,7 @@
 
 #This csv file is to be used in conjunction with MartaDatabase.py
 #Put this file where your path folder is set to
-#Do not set this file within any other folders in path
+#DO NOT set this file within any other folders in path
+#Transit day,time,device ID,station ID,use type,serial #
+#MartaDatabase.py will only take use of station ID
 #DELETE these comments when running MartaDatabase.py to avoid errors
