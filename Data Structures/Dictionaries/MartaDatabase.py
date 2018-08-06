@@ -26,17 +26,18 @@ def marta(file):
         count += 1 #number of stations
         average += dict[key] #adds all the number of taps per station together
     average /= count #creates the average number of taps per station
-    for value in dict.values(): #values are either 6 or 10 from the sample
+    for value in dict.values(): 
         diff = abs(value - average)   
-        list.append(diff) #list is [1, -1]
+        list.append(diff) 
         if (value - average) < 0:
-            new_list.append(value) #new_list is [-1]
-    new_list.sort() #for bigger csv files than^
-    list.sort()
-    lowest = list[0]
+            new_list.append(value) 
+    new_list.sort() #sorts low-high so we can find the lowest value
     least_traffic = new_list[0] #station with the least amount of traffic
+    list.sort() #sorts low-high so we can find the lowest value
+    lowest = list[0] #smallest # in difference compared to average
     above = average + lowest #this is the smallest difference between # of taps vs avg
     below = average - lowest #this is the smallest difference between # of taps vs avg
+    #we will use above and below in order to match them to their keys for closest to avg
     for key in dict: 
         if round(above) == round(dict[key]) or round(below) == round(dict[key]):
             closest = "The station ID with the closest to the average is: " + str(key)
